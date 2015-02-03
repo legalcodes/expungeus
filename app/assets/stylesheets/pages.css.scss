@@ -1,7 +1,14 @@
 // Place all the styles related to the pages controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+  @font-face {
+        font-family: "Metropolis1920";
+        src: url(/assets/Metropolis1920-Regular.otf) format("truetype");
+    }
 
+body {
+   background:black !important;
+}
 
 	.navbar-nav {
 	    margin: 0 auto;
@@ -38,7 +45,7 @@
 	margin: 0 auto;
 	//font-family: 'Playfair Display SC', serif;
 	//font-family: 'Bree Serif', serif;
-	font-family: 'Arvo', serif !important;
+	font-family: 'Metropolis1920', serif !important;
   font-size: 80px !important;
   //font-weight: 700;
   //color: white;
@@ -61,7 +68,8 @@
 }
 
 .subheading {
-	font-family: 'Playfair Display', serif;
+	font-family: 'Glegoo', serif;
+	color: #0b7b5f;
 	//font-family: 'Tangerine', cursive;
 	//font-weight: 400;
 	font-size: 34px;
@@ -77,28 +85,36 @@
 
 
 .titletext {
-	font-family: 'Arvo', serif !important;
+	font-family: 'Glegoo', serif !important;
 	font-weight: 700;
-	font-size: 20px;
+	font-size: 36px;
 	line-height: 20px;
 	position: relative; //necessary for partial underline effect
 	//color: #988c73;
 	color: #77643a;
+}
 
+.paneltext {
+	font-family: 'Glegoo', serif !important;
+	font-size: 20px;
+	line-height: 20px;
+	color: white;
+	text-align: center;
 }
 
 //Partial Underline Effect
-.titletext:before {
-	content:''; 
-	width: 50px; 
-	height:3px;
-	background: gray; 
-	position: absolute;
-	bottom:-24px;
-}
+//.titletext:before {
+//	content:''; 
+//	width: 50px; 
+//	height:3px;
+//	background: gray; 
+//	position: absolute;
+//	bottom:-24px;
+//}
 
 .bodytext {
-	font-family: 'Playfair Display', serif !important;
+	font-family: 'Glegoo', serif !important;
+	color: grey;
 }
 
 
@@ -125,16 +141,17 @@
 //	}
 
 .slide1 {
-	background-image: url("pipe2.jpg");
+	//background-image: url("pipe2.jpg");
+	background-color: black;
 	padding-top:0px;
   margin-top: -20px;
-	height: 600px;
+	height: 400px;
 	background-size: 100%;
 	color: white;
 	text-align: center;
   background-repeat: no-repeat;
   @media screen and (max-width: 900px) {
-    background-image: url('pipe2.jpg');
+    //background-image: url('pipe2.jpg');
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: 1500px;
