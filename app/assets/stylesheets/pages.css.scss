@@ -1,0 +1,202 @@
+// Place all the styles related to the pages controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+	.navbar-nav {
+	    margin: 0 auto;
+	    border-top: 4px solid white; 
+	    border-bottom: 4px solid white;
+	    font-family: 'Playfair Display SC', serif;
+	    font-weight: 900;
+	}
+
+@media ( min-width: 768px ) { 
+    .navbar > .container {
+        text-align: center;
+    }
+    .navbar-header,.navbar-brand,.navbar .navbar-nav,.navbar .navbar-nav > li {
+        float: none;
+        display: inline-block;
+    }
+    .collapse.navbar-collapse {
+        width: auto;
+        clear: none;
+    }
+}
+
+
+#mytext {
+    position: relative;
+    top: 50%; 
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+}
+
+.bandname {
+	position: relative;
+	margin: 0 auto;
+	//font-family: 'Playfair Display SC', serif;
+	//font-family: 'Bree Serif', serif;
+	font-family: 'Arvo', serif !important;
+  font-size: 80px !important;
+  //font-weight: 700;
+  //color: white;
+  line-height: 50px;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+	@media (max-width: 890px){
+  	line-height: 20px;
+  	font-size: 50px !important;
+  	transform: translateY(-480%);
+  	-webkit-transform: translateY(-80%);
+  	}  
+
+  @media (max-width: 700px){
+  	line-height: 60px;
+  	font-size: 33px !important;
+  	transform: translateY(-480%);
+  	-webkit-transform: translateY(-80%);
+  }
+}
+
+.subheading {
+	font-family: 'Playfair Display', serif;
+	//font-family: 'Tangerine', cursive;
+	//font-weight: 400;
+	font-size: 34px;
+	//font-size: 49px;
+	line-height: 55px;
+	letter-spacing: 1px;
+	position: relative;
+		@media (max-width: 700px){
+		font-size: 23px !important;
+		
+		}
+}
+
+
+.titletext {
+	font-family: 'Arvo', serif !important;
+	font-weight: 700;
+	font-size: 20px;
+	line-height: 20px;
+	position: relative; //necessary for partial underline effect
+	//color: #988c73;
+	color: #77643a;
+
+}
+
+//Partial Underline Effect
+.titletext:before {
+	content:''; 
+	width: 50px; 
+	height:3px;
+	background: gray; 
+	position: absolute;
+	bottom:-24px;
+}
+
+.bodytext {
+	font-family: 'Playfair Display', serif !important;
+}
+
+
+
+
+//YouTube Responsive Containers
+//	.embed-container { 
+//		position: relative; 
+//		padding-bottom: 56.25%; 
+//		height: 0; 
+//		overflow: hidden; 
+//		max-width: 100%; 
+//		height: auto; 
+//	} 
+
+//	.embed-container iframe, 
+//	.embed-container object, 
+//	.embed-container embed { 
+//		position: absolute; 
+//		top: 0; 
+//		left: 0; 
+//		width: 100%; 
+//		height: 100%; 
+//	}
+
+.slide1 {
+	background-image: url("pipe2.jpg");
+	padding-top:0px;
+  margin-top: -20px;
+	height: 600px;
+	background-size: 100%;
+	color: white;
+	text-align: center;
+  background-repeat: no-repeat;
+  @media screen and (max-width: 900px) {
+    background-image: url('pipe2.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 1500px;
+  }
+}
+
+.slide2 {
+	height: 500px;
+}
+
+.slide3 {
+	height: 400px;
+	background-image: url('vintagemail3.jpg');
+	background-repeat: no-repeat;
+	background-size: 1500px;
+	margin-top: 100px; 
+	margin-bottom: 60px;
+	color: white;
+	@media screen and (max-width: 560px) {
+    background-size: 1000px;
+  }
+}
+
+.glyphs {
+	font-size: 30px;
+	text-align: center;
+	display: flex;
+  justify-content: space-between;
+  color: #a29881;
+	@media (max-width: 700px){
+		font-size: 20px;
+	}
+}
+
+.FBglyphLinks {
+	color: #a29881;
+}
+
+.TWglyphLinks {
+	color: #a29881;
+}
+
+.YTglyphLinks {
+	color: #a29881;
+}
+
+a.FBglyphLinks:visited,
+a.YTglyphLinks:visited, 
+a.TWglyphLinks:visited {
+	color: #a29881;
+}
+
+a.FBglyphLinks:hover {
+	color: #3b5998;
+}
+
+a.YTglyphLinks:hover {
+	color: #990000;
+}
+
+a.TWglyphLinks:hover {
+	color: #55acee;
+}
+
+
