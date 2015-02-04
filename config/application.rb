@@ -6,7 +6,6 @@ require 'rails/all'
 # you've limited to :test, :development, or :production.
 Bundler.require(*Rails.groups)
 
-config.assets.precompile << /\.(?:svg|eot|woff|ttf)$/
 
 module Htt
   class Application < Rails::Application
