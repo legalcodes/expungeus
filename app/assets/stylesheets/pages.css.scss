@@ -3,8 +3,8 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
   @font-face {
         font-family: "Metropolis1920";
-        src: url(/assets/Metropolis1920-Regular.otf) format("truetype");
-        src: asset-url('Metropolis1920-Regular.otf') format('truetype');
+        //src: url(/assets/Metropolis1920-Regular.otf) format("truetype");
+        src: asset-url('Metropolis1920-Regular.otf') format("truetype");
     }
 
 body {
