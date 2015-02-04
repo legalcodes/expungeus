@@ -4,6 +4,7 @@
   @font-face {
         font-family: "Metropolis1920";
         src: url(/assets/Metropolis1920-Regular.otf) format("truetype");
+        src: asset-url('Metropolis1920-Regular.otf') format('truetype');
     }
 
 body {
