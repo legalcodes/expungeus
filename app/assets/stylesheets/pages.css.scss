@@ -2,9 +2,12 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
   @font-face {
-        font-family: "Metropolis1920";
+        font-family: 'Metropolis1920';
         //src: url(/assets/Metropolis1920-Regular.otf) format("truetype");
-        src: font_url('Metropolis1920-Regular.otf') format('truetype');
+        src: font-url("/assets/Metropolis1920.otf");
+        src: font-url("/assets/Metropolis1920.otf") format('truetype');
+        font-weight: normal;
+        font-style: normal;
     }
 
 body {
