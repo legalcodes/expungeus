@@ -11,20 +11,21 @@
     }
 
 body {
-   background:black !important;
+   background: #eee8db !important;
 }
 
 	.navbar-nav {
-	    margin: 0 auto;
-	    border-top: 4px solid white; 
-	    border-bottom: 4px solid white;
-	    font-family: 'Playfair Display SC', serif;
-	    font-weight: 900;
+	    //margin: 0 auto;
+	    //border-top: 4px solid white; 
+	    //border-bottom: 4px solid white;
+	    background-image: none;
+	    
+	    font-family: 'Source Sans Pro', sans-serif; font-weight: bold !important; 
 	}
 
 @media ( min-width: 768px ) { 
     .navbar > .container {
-        text-align: center;
+        text-align: center;    
     }
     .navbar-header,.navbar-brand,.navbar .navbar-nav,.navbar .navbar-nav > li {
         float: none;
@@ -32,7 +33,7 @@ body {
     }
     .collapse.navbar-collapse {
         width: auto;
-        clear: none;
+        clear: none;     
     }
 }
 
@@ -47,38 +48,47 @@ body {
 .bandname {
 	position: relative;
 	margin: 0 auto;
-	//font-family: 'Playfair Display SC', serif;
-	//font-family: 'Bree Serif', serif;
-	font-family: 'Metropolis1920', serif !important;
+	font-family: 'Source Sans Pro', sans-serif; font-weight: bold !important;
   font-size: 80px !important;
-  //font-weight: 700;
-  //color: white;
-  line-height: 50px;
-  transform: translateY(-50%);
-  -webkit-transform: translateY(-50%);
-	@media (max-width: 890px){
-  	line-height: 20px;
+  color: #fff;
+  line-height: 80px;
+  
+	@media (max-width: 563px){
   	font-size: 50px !important;
-  	transform: translateY(-480%);
-  	-webkit-transform: translateY(-80%);
-  	}  
+  }
+ // 	}  
 
-  @media (max-width: 700px){
-  	line-height: 60px;
-  	font-size: 33px !important;
-  	transform: translateY(-480%);
-  	-webkit-transform: translateY(-80%);
+//  @media (max-width: 700px){
+//  	line-height: 60px;
+//  	font-size: 33px !important;
+  	//transform: translateY(-480%);
+  	//-webkit-transform: translateY(-80%);
+//  }
+}
+
+.slide1 {
+	background-image: image-url("states6.png");
+	background-repeat: repeat-y;
+	background-size: 200%;
+	background-attachment: fixed;
+	background-color: #eac634;
+	//padding-top:0px;
+  //margin-top: -20px;
+	height: 700px;
+	
+  @media screen and (max-width: 550px) {
+    //background-image: url('pipe2.jpg');
+    background-size: 1000px;
   }
 }
 
 .subheading {
-	font-family: 'Glegoo', serif;
-	color: #0b7b5f;
+	font-family: 'Source Sans Pro', sans-serif; font-weight: normal !important;
+	color: #fff;
 	//font-family: 'Tangerine', cursive;
 	//font-weight: 400;
-	font-size: 34px;
-	//font-size: 49px;
-	line-height: 55px;
+	font-size: 38px;
+	line-height: 35px;
 	letter-spacing: 1px;
 	position: relative;
 		@media (max-width: 700px){
@@ -89,78 +99,30 @@ body {
 
 
 .titletext {
-	font-family: 'Glegoo', serif !important;
+	font-family: 'Source Sans Pro', sans-serif; font-weight: bold !important;
 	font-weight: 700;
 	font-size: 36px;
-	line-height: 20px;
+	line-height: 28px;
 	position: relative; //necessary for partial underline effect
 	//color: #988c73;
-	color: #77643a;
+	color: #000;
 }
 
 .paneltext {
-	font-family: 'Glegoo', serif !important;
-	font-size: 20px;
-	line-height: 20px;
-	color: white;
-	text-align: center;
+	font-family: 'Source Sans Pro', sans-serif; font-weight: 300 !important;
+	font-size: 18px;
+	color: #30353b;
+	line-height: 28px;
+	background: #eee8db;
+	
 }
 
-//Partial Underline Effect
-//.titletext:before {
-//	content:''; 
-//	width: 50px; 
-//	height:3px;
-//	background: gray; 
-//	position: absolute;
-//	bottom:-24px;
-//}
 
 .bodytext {
-	font-family: 'Glegoo', serif !important;
+	font-family: 'Source Sans Pro', sans-serif; font-weight: normal !important;
 	color: grey;
 }
 
-
-
-
-//YouTube Responsive Containers
-//	.embed-container { 
-//		position: relative; 
-//		padding-bottom: 56.25%; 
-//		height: 0; 
-//		overflow: hidden; 
-//		max-width: 100%; 
-//		height: auto; 
-//	} 
-
-//	.embed-container iframe, 
-//	.embed-container object, 
-//	.embed-container embed { 
-//		position: absolute; 
-//		top: 0; 
-//		left: 0; 
-//		width: 100%; 
-//		height: 100%; 
-//	}
-
-.slide1 {
-	//background-image: url("pipe2.jpg");
-	background-color: black;
-	padding-top:0px;
-  margin-top: -20px;
-	height: 400px;
-	background-size: 100%;
-	color: white;
-	text-align: center;
-  background-repeat: no-repeat;
-  @media screen and (max-width: 900px) {
-    //background-image: url('pipe2.jpg');
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: 1500px;
-  }
-}
 
 .slide2 {
 	height: 500px;
@@ -168,15 +130,20 @@ body {
 
 .slide3 {
 	height: 400px;
-	background-image: url('vintagemail3.jpg');
-	background-repeat: no-repeat;
-	background-size: 1500px;
+	background-image: url('lightgreen.png');
+	background-repeat: repeat;
+	font-color: #30353b;
+	background-size: 3500px;
 	margin-top: 100px; 
 	margin-bottom: 60px;
-	color: white;
 	@media screen and (max-width: 560px) {
     background-size: 1000px;
   }
+}
+
+
+.wideBackground {
+	background-color: #dbe0c0;
 }
 
 .glyphs {
@@ -220,4 +187,31 @@ a.TWglyphLinks:hover {
 	color: #55acee;
 }
 
+.aba {
+	max-width: 70%;
+}
+
+.techpres {
+	max-width: 70%;
+}
+
+.baltsun {
+	max-width: 46%;
+	-webkit-filter: invert(100%);
+}
+.tech {
+	max-width: 83%;
+}
+.wypr {
+	max-width: 37%;
+}
+.abamag {
+	max-width: 80%;
+}
+.njjn {
+	max-width: 37%;
+}
+.hackbalt {
+	max-width: 90%;
+}
 
