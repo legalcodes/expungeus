@@ -8,7 +8,11 @@
 
 <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
 	<!-- Brand and toggle get grouped for better mobile display -->
+
   <div class="container">
+  	<a class="navbar-brand navbar-right" href="https://twitter.com/expungeproject" target="_blank"><i class="fa fa-twitter" ></i></a>
+  	<a class="navbar-brand navbar-right" href="mailto:contact@expungeproject.org"><i class="fa fa-envelope" ></i></a>
+
     <div class="navbar-header">
       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
         <span class="sr-only">Toggle navigation</span>
@@ -23,28 +27,59 @@
       	<li><a href="#home">HOME</a></li>
         <li><a href="#about">ABOUT</a></li>
         <li><a href="#press">PRESS</a></li>
-        <li><a href="#contact">CONTACT</a></li>
+        <li><a href="#contact">WHO WE ARE</a></li>
       </ul>
+      
     </div><!-- /.navbar-collapse-->
   </div>
 </nav>
 
+<!-- <ul class="nav navbar-nav">
+        <li>
+        	<a href="mailto:contact@expungeproject.org" >
+	  			<i class="fa fa-envelope" ></i></a>
+	  		</li>
+	  		<li>
+	  			<a href="https://twitter.com/expungeproject" target="_blank"  ><center>
+	  				<i class="fa fa-twitter"></i>
+	  			</a>
+	  		</li>
+      </ul>
+ -->
+
+
+
+
 <div class="slide1" id="home">
-	<div class="container" >
+	<div class="container">
+	  
 	  <div class="row">
-			<div class="col-md-4"></div>
 			<div class="col-md-4">
-				<h1 class="bandname"><b><br><br>THE<br>NATIONAL<br> EXPUNGEMENT<br> PROJECT<br></b></h1>
+			</div>
+			<div class="col-md-4">
+				<h1 class="nep">
+					<br><br><b>THE<br>NATIONAL<br>EXPUNGEMENT<br>PROJECT</b><br>
+				</h1><br>
 			</div>
 			<div class="col-md-4"></div>
 		</div>
-	</div><br>
-	<div class="subheading" style="text-align: center; color: #30353b;"><b><br>
-			CLICK, CLICK, CLEAN SLATE</b>
-	</div>	
-	
+		
+		<div class="row">
+			<div class="col-md-4"></div>
+			<div class="col-md-6">
+				<h1 style="font-family: 'Source Sans Pro', sans-serif; font-weight: bold !important;">CLICK, CLICK, CLEAN SLATE</h1>
+			</div>
+			<div class="col-md-2"></div>
+		</div>
+
+
+	</div>
 </div>
 	
+
+
+
+
 <div class="container">
   <div class="row">
 		<div class="col-md-12">
@@ -87,16 +122,19 @@
 					<div class="col-md-6">
 						<div class="paneltext" style="color: #30353b; background-color: #dedecd">
 							In search of a better way, we created <%= link_to ("ExpungeMaryland.org"), 'http://www.expungemaryland.org', target: '_blank'%>, a web app that connects people who need an expungement with volunteer lawyers. <br><br>
-							The demand is there. Since creating ExpungeMaryland, bar associations, legal service providers, and even a state supreme court have asked us about using tech to improve access to expungement in their states. Our experience building ExpungeMaryland and other projects makes us adept and scaling this project nationally. <br><br>
-							Our goal is to achieve better legal service, better data collection, and a more informed discussion.
+							Since creating ExpungeMaryland, bar associations, legal service providers, and even a state supreme court have asked us about using tech to improve access to expungement in their states. Our experience building ExpungeMaryland and other projects makes us adept and scaling this project nationally. <br><br>
+
+							Our vision is to bring expungement apps to 25 states by partnering with local stakeholders. This will capture 80 percent of the US population, and 75 percent of its annual arrests. We will also make the code available to any other states interested in replicating the project.<br><br>If you are inspired to innovate legal service in your state, <a href="mailto:contact@expungeproject.org">we want to hear from you!</a>
 						</div>
 					</div>
 					<div class="col-md-6" >
 						<center><%= image_tag("usa.png", :class => "usaStyle") %><br></center>
 						<div class="paneltext" style="font-size: 35px; background-color: #dedecd; line-height: 15px;"><br><br>
 							<center>
-								<b>THE GOAL</b>
+								<b>THE PLAN</b>
+								<br>
 							</center>
+							</div>
 						</div>
 					</div>
 
@@ -214,22 +252,29 @@
 	  <div class="row" style="background: #eee8db">
 			<div class="col-md-12">
 	  			<h3 class="titletext" style="color: #30353b; padding: 70px 0px 0px 0;">
-	  				<center>CONTACT</center><br>
+	  				<center>WHO WE ARE</center><br>
 	  			</h3>
 	  	</div>
 	  <div class="row" style="padding:0px 0px 250px 0px;">
-	  	<div class="col-md-6">
+	  	
+	  	<div class="col-md-3"></div>
+	  	<div class="col-md-3">
 	  		<center>
-	  			<a href="mailto:contact@expungeproject.org">
-	  			<i class="fa fa-envelope" class="FBglyphLinks" style="font-size: 150px;">
-	  			</i>
+	  			<%= image_tag("jon.png", :class => "jon")%><br><br>
+	  			<h3>Jon Tippens</h3></center>
+	  		<div class="paneltext">
+	  			Jon is a legal tech ninja. With both a JD from the University of Maryland and the ability to code, he should be rich. But his passion is building projects that help people better understand and access the law, like <a href="http://www.expungemaryland.com" target="_blank">this expungement app</a>. He previously worked at the Maryland Attorney General's office. Beyond doing all the things, he's also a jazz musician.
 	  	</div>
-	  	<div class="col-md-6">
-	  		<a href="https://twitter.com/expungeproject" class="TWglyphLinks" target="_blank" ><center>
-	  			<i class="fa fa-twitter" style="font-size: 150px;">
-	  			</i>
-	  		</a>
 	  	</div>
+	  	<div class="col-md-3">
+	  		<center><%= image_tag("jason.png", :class => "jon")%><br></center><br>
+	  		<center><h3>Jason Tashea</h3></center>
+	  		<div class="paneltext">
+	  			Jason was your best friend, until he learned about legal tech. Now, it consumes his life as a legal tech and criminal justice consultant at the John Jay College of Criminal Justice in New York. He's trying to modernize reentry in Oregon's federal  courts, parole in Baltimore, and expungement nationally. He's got a JD from the University of Oregon, was a Fulbright in Kosovo studying juvenile justice, and has worked on criminal justice in Maryland, Armenia, and at the United Nations. 
+	  		</div>
+	  	</div>
+	  	<div class="col-md-3"></div>
+
 	  </div>
 	</div>
 </div>

@@ -50,14 +50,7 @@ body {
     }
 }
 
-#mytext {
-    position: relative;
-    top: 50%; 
-    transform: translateY(-50%);
-    -webkit-transform: translateY(-50%);
-}
-
-.bandname {
+.nep {
 	position: relative;
 	margin: 0 auto;
 	font-family: 'Source Sans Pro', sans-serif; font-weight: bold !important;
@@ -72,14 +65,7 @@ body {
   @media (max-width: 361px){
   	font-size: 35px !important;
   }
- // 	}  
-
-//  @media (max-width: 700px){
-//  	line-height: 60px;
-//  	font-size: 33px !important;
-  	//transform: translateY(-480%);
-  	//-webkit-transform: translateY(-80%);
-//  }
+ 
 }
 
 .slide1 {
@@ -88,29 +74,12 @@ body {
 	background-size: 200%;
 	background-attachment: fixed;
 	background-color: #eac634;
-	//padding-top:0px;
-  //margin-top: -20px;
 	height: 700px;
 	
   @media screen and (max-width: 550px) {
     //background-image: url('pipe2.jpg');
     background-size: 1000px;
   }
-}
-
-.subheading {
-	font-family: 'Source Sans Pro', sans-serif; font-weight: normal !important;
-	color: #fff;
-	//font-family: 'Tangerine', cursive;
-	//font-weight: 400;
-	font-size: 38px;
-	line-height: 35px;
-	letter-spacing: 1px;
-	position: relative;
-		@media (max-width: 700px){
-		font-size: 23px !important;
-		
-		}
 }
 
 
@@ -130,14 +99,7 @@ body {
 	color: #30353b;
 	line-height: 28px;
 	background: #eee8db;
-	text-align: justify;
-	
-}
-
-
-.bodytext {
-	font-family: 'Source Sans Pro', sans-serif; font-weight: normal !important;
-	color: grey;
+	text-align: justify;	
 }
 
 
@@ -163,16 +125,6 @@ body {
 	background-color: #dbe0c0;
 }
 
-.glyphs {
-	font-size: 30px;
-	text-align: center;
-	display: flex;
-  justify-content: space-between;
-  color: #a29881;
-	@media (max-width: 700px){
-		font-size: 20px;
-	}
-}
 
 .FBglyphLinks {
 	color: #a29881;
@@ -233,7 +185,15 @@ a.TWglyphLinks:hover {
 }
 
 .usaStyle {
-
 	max-width: 70%;
+	padding-top: 70px
 }
 
+.jon {
+	max-width: 50%;
+	text-align: center;
+}
+
+.jason {
+
+}
