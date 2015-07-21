@@ -24,7 +24,7 @@
     }
 
 body {
-   background: #eee8db !important;
+   background: #fff !important;
 }
 
 	.navbar-nav {
@@ -51,12 +51,13 @@ body {
 }
 
 .nep {
-	position: relative;
+	//position: relative;
 	margin: 0 auto;
 	font-family: 'Source Sans Pro', sans-serif; font-weight: bold !important;
-  font-size: 80px !important;
-  color: #fff;
-  line-height: 80px;
+  	font-size: 90px !important;
+	text-align: center;
+	color: #fff;
+	line-height: 110px;
   
 	@media (max-width: 563px){
   	font-size: 50px !important;
@@ -69,16 +70,21 @@ body {
 }
 
 .slide1 {
-	background-image: image-url("states6.png");
-	background-repeat: repeat-y;
-	background-size: 200%;
+	background-image: image-url("states.jpg");
+	// background-repeat: repeat-y;
+	background-size: 100%;
 	background-attachment: fixed;
-	background-color: #eac634;
-	height: 700px;
+	// background-color: #eac634;
+	height: 600px;
 	
-  @media screen and (max-width: 550px) {
-    //background-image: url('pipe2.jpg');
+    @media screen and (max-width: 683px) {
     background-size: 1000px;
+//  	height: 400px;
+    }
+	
+    @media screen and (max-width: 550px) {
+    background-size: 1000px;
+	height: 400px;
   }
 }
 
@@ -98,13 +104,26 @@ body {
 	font-size: 18px;
 	color: #30353b;
 	line-height: 28px;
-	background: #eee8db;
+	background: #fff;
 	text-align: justify;	
 }
 
 
 .slide2 {
-	height: 500px;
+	background-image: image-url("painter.jpg");
+	background-size: 100%;
+	background-attachment: fixed;
+	height: 600px;
+	
+    @media screen and (max-width: 683px) {
+    background-size: 1000px;
+//  	height: 400px;
+    }
+	
+    @media screen and (max-width: 550px) {
+    background-size: 1000px;
+	height: 400px;
+  }
 }
 
 .slide3 {
