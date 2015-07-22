@@ -120,10 +120,23 @@ body {
 //  	height: 400px;
     }
 	
-    @media screen and (max-width: 550px) {
+    @media screen and (max-width:1199px) {
     background-size: 1000px;
-	height: 400px;
+	height: 710px;
   }
+  
+  @media screen and (max-width:550px) {	
+	  height: 930px;
+	}
+	
+    @media screen and (max-width:360px) {	
+  	  height: 1060px;
+  	}
+	
+    @media screen and (max-width:300px) {	
+  	  height: 1260px;
+  	}
+	
 }
 
 .slide3 {
@@ -185,7 +198,7 @@ a.TWglyphLinks:hover {
 
 .baltsun {
 	max-width: 56%;
-	-webkit-filter: invert(100%);
+	//-webkit-filter: invert(100%);
 }
 
 .huffpo {
@@ -194,12 +207,14 @@ a.TWglyphLinks:hover {
 
 .tech {
 	max-width: 93%;
+	-webkit-filter: invert(100%);
 }
 .wypr {
 	max-width: 47%;
 }
 .abamag {
 	max-width: 90%;
+	-webkit-filter: invert(100%);
 }
 .njjn {
 	max-width: 47%;
